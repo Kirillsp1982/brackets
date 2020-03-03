@@ -12,7 +12,7 @@ module.exports = function check(str, bracketsConfig) {
 	  }else {
 		  for (let j = 0; j < str.length; j++) {
 		    if (bracketLeft === str[j]) count++;
-			if (bracketLeft === str[j]) count--;
+			if (bracketRight === str[j]) count--;
 			if (count < 0) return false;
 	      }
 		  if (count !== 0) return false;
